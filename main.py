@@ -3,7 +3,7 @@ from bos import BOS
 
 def main():
     umbrel_2fa, umbrel_password, bos_username, bos_password,\
-         amount, n_times, best_ppm, worst_ppm = sys.argv[1:]
+         amount, n_times, best_ppm, worst_ppm, base_url = sys.argv[1:]
     amount = abs(int(amount))
     n_times = abs(int(n_times))
     best_ppm = abs(int(best_ppm))
@@ -14,7 +14,8 @@ def main():
         umbrel_password=umbrel_password,
         bos_username=bos_username,
         bos_password=bos_password,
-        max_ppm=worst_ppm
+        max_ppm=worst_ppm,
+        base_url=base_url
     )
     b.loop_out(amount=amount, n_times=n_times, max_ppm=best_ppm)
 

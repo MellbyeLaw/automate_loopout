@@ -8,7 +8,7 @@ class UmbrelClass(webdriver.Firefox):
     '''geckodriver must be in path'''
     def __init__(
         self, umbrel_2fa, umbrel_password,
-        base_url = 'http://gui-ideapad-3-15alc6.local',
+        base_url
     ):
         '''starts in umbrel page'''
         super().__init__(

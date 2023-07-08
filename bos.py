@@ -14,8 +14,8 @@ class BOS(UmbrelClass):
     amount_to_loopout = 0
     bos_port = ':8055'
 
-    def __init__(self, umbrel_2fa, umbrel_password, bos_username, bos_password, max_ppm):
-        super().__init__(umbrel_2fa, umbrel_password)
+    def __init__(self, umbrel_2fa, umbrel_password, bos_username, bos_password, max_ppm, base_url):
+        super().__init__(umbrel_2fa, umbrel_password, base_url)
         self.__bos_username = bos_username
         self.__bos_password = bos_password
         self._open_bos()
