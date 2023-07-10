@@ -105,7 +105,7 @@ class BOS(UmbrelClass):
     def try_pay_invoice(self, invoice, max_fee):
         self.pay_invoice(invoice, max_fee)
         
-        for i in range(60*24):
+        for i in range(60*12):
             time.sleep(5)
 
             try:
