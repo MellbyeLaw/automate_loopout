@@ -2,6 +2,8 @@ import sys
 from bos import BOS
 
 def main():
+    # TODO: use argparse and env variables
+    # https://docs.python.org/3/library/argparse.html
     umbrel_2fa, umbrel_password, bos_username, bos_password,\
          amount, n_times, best_ppm, worst_ppm, base_url = sys.argv[1:]
     amount = abs(int(amount))

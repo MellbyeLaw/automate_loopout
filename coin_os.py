@@ -18,8 +18,9 @@ class Coinos(webdriver.Firefox):
 
         b = self.find_elements(By.TAG_NAME, 'button')[1]
         b.click()
-        time.sleep(2)
+        time.sleep(3)
 
+        # TODO: change to EC expected conditions
         change_to_sats = self.find_element(By.XPATH, 
                                            '/html/body/div/main/form/div/div/div/div[1]/div[2]/button')
         change_to_sats.click()
