@@ -5,3 +5,5 @@ loopout_log.txt
 *.ipynb
 *.pyc
 loopout_log.csv
+TODO.txt
+.env
