@@ -7,3 +7,4 @@ loopout_log.txt
 loopout_log.csv
 TODO.txt
 .env
+.venv

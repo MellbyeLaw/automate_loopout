@@ -7,7 +7,7 @@ import random
 import time
 import uuid
 
-from IPython.display import clear_output
+# from IPython.display import clear_output
 
 class BOS(UmbrelClass):
     '''Deals with BOS app'''
