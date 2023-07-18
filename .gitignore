@@ -8,3 +8,8 @@ loopout_log.csv
 TODO.txt
 .env
 .venv
+bin
+include
+lib
+lib64
+*.cfg
